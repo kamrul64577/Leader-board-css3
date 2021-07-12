@@ -117,16 +117,25 @@ hr{
 /* Media Query */
 @media only screen and (max-width:688px) {
     .container{
-        width: 100%;
-        text-align: center;
+        width: 90%
     }
     .players, .blogs, .courses{
         grid-template-columns: repeat(1,1fr);
-        
-    }
-    .player, .blog{
+     }
+    .player, .blog, .course{
         flex-direction: column;
-        
+        align-self: center;
+        justify-self: center;
+   }
+    .course{
+        margin-top: 35px;
+        padding: 20px;
+    }
+    .course.course1{
+        margin-top: 0;
+    }
+    .section-title{
+        text-align: center;
     }
   
 }
