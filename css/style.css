@@ -6,6 +6,7 @@
 body{
     font-family: 'Poppins', sans-serif; 
     background-color: #F3F1FF;
+   margin: 0;
 }
 main{
     display: flex;
@@ -23,6 +24,50 @@ hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
 }
+
+/* NAVBAR */
+.header{
+    background-color: #562EFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.nav-container{
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-container .nav-title{
+    color: white;
+    font-size: 24px;
+    
+}
+.nav-container h1 img{
+    width: 40px;
+    
+}
+ul>img{
+    width: 50px;
+    padding: 0 18px;
+}
+.nav-container ul{
+    list-style: none;
+    display: flex;
+}
+.nav-container ul li{
+     padding: 0 18px;
+     margin-top: 15px;
+}
+.nav-container ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+
 /* TOP PLAYERS STYLE  */
 .top-players{
     margin-bottom: 20px;
@@ -116,6 +161,15 @@ hr{
 
 /* Media Query */
 @media only screen and (max-width:688px) {
+    .nav-container{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav-container ul li{
+     padding: 0 10px;
+    }
+    
+
     .container{
         width: 90%
     }
@@ -127,6 +181,12 @@ hr{
         align-self: center;
         justify-self: center;
    }
+   .blog-title{
+       margin-bottom: 0;
+   }
+   .blog-author{
+    margin-bottom: 35px;
+}
     .course{
         margin-top: 35px;
         padding: 20px;
