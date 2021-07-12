@@ -164,10 +164,14 @@ ul>img{
     .nav-container{
         width: 100%;
         justify-content: space-around;
+        /* padding-left: 50px; */
     }
     .nav-container ul li{
      padding: 0 10px;
     }
+    ul>img{
+    padding: 0;
+}
     
 
     .container{
